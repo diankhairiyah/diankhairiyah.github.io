@@ -62,7 +62,7 @@ ul li.active a{
 
 .title h1{
 	color: #fff;
-	font-size: 70%;
+	font-size: 70px;
 }
 
 @media (max-width: 600px) {
@@ -71,4 +71,7 @@ ul li.active a{
     width: 100%;
     height: auto;
   }
+  .title h1{
+	  font-size: 70vw;
+	}
 }
