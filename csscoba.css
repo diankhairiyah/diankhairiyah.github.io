@@ -62,7 +62,7 @@ ul li.active a{
 
 .title h1{
 	color: #fff;
-	font-size: 70px;
+	font-size: 70%;
 }
 
 @media (max-width: 600px) {
