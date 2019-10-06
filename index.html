@@ -6,12 +6,16 @@
 </head>
 <style>
 	form{
-		color: #fff;
-		position:absolute;
-		top: 80%;
-		left:35%;
+		color: #000;
+		padding: 10 50 0;
 		text-align:center;
-	}
+		height:auto;}
+	article{background-color:#ffff7d;}
+@media (max-width: 600px) {
+  form{
+    left:35vw;
+  }
+}
 </style>
 <body>
 	<header>
@@ -31,16 +35,36 @@
 		</div>
 		<div class="title">
 			<h1>DAYEN'S</h1>
-			<center><h3 style="color:#fff;">let's be friend!</h3></center>
+			<center><h3 style="color:#fff;">let's be friend!</h3>
+			<marquee><p style="color:#fff;"><i>Isi form dibawah ya!</i></p></marquee>
+			</center>
+			
 		</div>
+	</header>
+<article>
 		<br>
 		<form><h2> Data Pengunjung :</h2><br>
-			Nama:
-			<input type="text" name="firstname">
-			Instagram:
+			Tanggal:<br>
+			<input type="datetime-local" name="tanggal"><br><br>
+			Foto Terbaikmu !<br><br>
+			<input type="file" name="foto"><br><br>
+			Nama:<br>
+			<input type="text" name="firstname"><br><br>
+			Gender:<br>
+			<input type="radio" name="p">P <input type="radio" name="l">L <br><br>
+			Email:<br>
+			<input type="email" name="email"><br><br>
+			Warna Kesukaan ? <br>
+			<input type="color" name="warna"><br><br>
+			Instagram:<br>
 			<input type="text" name="lastname"><br><br>
-			<input type="submit" value="simpan">
+			Yang mana favorit mu ?<br>
+			<input type="checkbox" name="p1"> Kucing <br>
+			<input type="checkbox" name="p2"> Kelinci <br>
+			<input type="checkbox" name="p3"> Puppy <br>
+			<input type="checkbox" name="p4"> Tidak ada <br><br>
+			<input type="submit" value="simpan"><br><br>
 		</form>
-	</header>
+</article>
 </body>
 </html>
