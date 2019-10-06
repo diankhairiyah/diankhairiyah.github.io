@@ -7,10 +7,11 @@
 <style>
 body{
  background-color:rgb(255, 127, 80);
+ height:100%
 }
 article {
  text-align:center;
-  padding: 20px;
+  padding:100px;
   width: auto;
   background-color:rgb(255, 127, 80);
 }
@@ -42,16 +43,39 @@ article ul li.active a{
     background-color: #fff;
 	color: black;
 }
-.yutub{
-	background-color:rgb(255, 127, 80);
-	float: left;
-	width:auto;
-	padding-top:50px;
+
+.container{
+	padding-left:150px;
+	width: 800px;
+	margin: 50px auto 0;
+	display: flex;
+	flex-direction:row;
+	flex-wrap:wrap;
 }
-.yutub iframe{
-	padding: 20px 20p;
+.container .box{
+	position: relative;
+	width: 200px;
+	height: 200px;
+	background: rgb(255, 127, 80);
+	margin: 10px;
+	box-sizing:border-box;
+	display: inline-block;	
+}
+.container .box .imgBox{
+	position: relative;
+}
+.container .box .imgBox img{
+	max-width: 100%;
+	transition: transform 2s;
+}	
+.container .box:hover .imgBox img{
+	transform: scale(1.2);
 }
 @media (max-width: 600px) {
+ .container{
+    width:auto;
+	height:auto;
+	padding-left:auto;}
   article {
     width: 100%;
     height: auto;
@@ -70,7 +94,6 @@ article ul li.active a{
 				<li><a href="profil.html">Profil</a></li>
 				<li><a href="galeri.html">Gallery</a></li>
 				<li class="active"><a href="#">Media Sosial</a></li>
-				<li><a href="tabel.html">K-Pop</a></li>
 			</ul>
 			</div>
 		</div>
@@ -80,26 +103,29 @@ article ul li.active a{
 		</div>
 	</header>
 <article>
-	<h2 style="color:rgb(255, 202, 97)">Media Sosial</h2>
-		<ul style="color:white;font-family:comic sans ms;font-size:110%;">
-			<li>Instagram 	: <a href="https://instagram.com/dn.khry"> <i><b> @dn.khry </b></i></a><br>
-			<li>Twitter	&nbsp &nbsp	: <a href="https://twitter.com/duhsapaneh"> <i><b> @duhsapaneh </b></i>
-			</a>
-		</li></ul><br><br>
-		<center>
-	<div class="yutub">
-	<br><h2 style="color:white"><b>YUK STREAMING!!</b></h2><br>
-	<iframe width="850" height="500"
-		src="https://www.linkedin.com/in/dian-khairiyah-97a191175"> LINKEDIN
-	</iframe>
-	<iframe width="425" height="250"
-		src="https://www.youtube.com/embed/Pm0_G8Zl0ek"> WINNER - AH YEAH
-	</iframe>
-	<iframe width="425" height="250"
-		src="https://www.youtube.com/embed/NY8VGNft-Zc"> MINO - FIANCE
-	</iframe>
+	<h1 style="color:rgb(255, 202, 97)">Media Sosial</h1>
+	<div class ="container">
+	<div class ="box">
+		<div class="imgBox">
+			<a href="http://instagram.com/dn.khry">
+			<img src="instagram.png" height="200px" width="200px" ></a>
+		</div>
+	</div>
+	
+	<div class ="box">
+		<div class="imgBox">
+			<a href="http://twitter.com/diaannkhry">
+			<img src="twitter.png" height="200px" width="200px"></a>
+		</div>
+	</div>
+	
+	<div class ="box">
+		<div class="imgBox">
+		<a href="http://linkedin.com/in/dian-khairiyah-97a191175">
+			<img src="linkedin.png" height="200px" width="200px"></a>
+		</div>
+	</div></div>
 	</div>
 </article>
-	<audio src="lowkey.mp3" autoplay="autoplay" hidden="hidden"> </audio>
 </body>
 </html>
